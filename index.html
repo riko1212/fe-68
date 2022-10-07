@@ -22,7 +22,7 @@
   </head>
   <body class="site-body">
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a href="" class="header-logo">
             <img
@@ -50,15 +50,17 @@
             </li>
           </ul>
         </nav>
-        <a class="header-tel link" href="tel:+380441111111"
-          >+38 044 111 11 11</a
-        >
-        <button class="header-btn btn" type="button">Online-booking</button>
+        <div class="header-connect">
+          <a class="header-tel link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="header-btn btn" type="button">Online-booking</button>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <ul class="hero-list list">
             <li class="hero-item">
               <a
@@ -79,16 +81,18 @@
               >
             </li>
           </ul>
-          <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="hero-after-title">
-            We are experts in trendy men’s haircuts.<br />
-            We work quickly, carefully and with style.
-          </p>
+          <div class="hero-wrap">
+            <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-after-title">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
         </div>
       </section>
       <section class="about section">
-        <div class="container">
+        <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
               <img
@@ -107,22 +111,24 @@
               />
             </li>
           </ul>
-          <p class="about-pre-title pre-title">About</p>
-          <h2 class="about-title section-title">
-            Best Barbershop in your city
-          </h2>
-          <p class="about-after-title">
-            If you want to add more confidence to your image, you should
-            definitely visit us.
-          </p>
-          <p class="about-text">
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <button type="button" class="about-btn btn">Online-booking</button>
+          <div class="about-wrap">
+            <p class="about-pre-title pre-title">About</p>
+            <h2 class="about-title section-title">
+              Best Barbershop in your city
+            </h2>
+            <p class="about-after-title">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="about-text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="about-btn btn">Online-booking</button>
+          </div>
         </div>
       </section>
       <section class="prices section" id="prices">
@@ -131,42 +137,44 @@
             Spend your time with the best masters
           </p>
           <h2 class="prices-title section-title">Services and prices</h2>
-          <ul class="prices-list list">
-            <li class="prices-item">
-              <p class="prices-list-text">Men’s haircut</p>
-              <p class="prices-list-text">from 300 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-list-text">Beard trim</p>
-              <p class="prices-list-text">from 300 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-list-text">Mustache trim</p>
-              <p class="prices-list-text">from 200 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-list-text">Straight razor shave</p>
-              <p class="prices-list-text">from 200 uah.</p>
-            </li>
-          </ul>
-          <ul class="prices-list list">
-            <li class="prices-item">
-              <p class="prices-list-text">Trainee’s haircut</p>
-              <p class="prices-list-text">from 50 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-list-text">Haircut under the nozzle</p>
-              <p class="prices-list-text">from 200 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-list-text">Children’s haircut (0-12 y.o.)</p>
-              <p class="prices-list-text">from 300 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-list-text">Camouflage of gray hair</p>
-              <p class="prices-list-text">from 200 uah.</p>
-            </li>
-          </ul>
+          <div class="prices-wrap">
+            <ul class="prices-list list">
+              <li class="prices-item">
+                <p class="prices-list-text">Men’s haircut</p>
+                <p class="prices-list-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-list-text">Beard trim</p>
+                <p class="prices-list-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-list-text">Mustache trim</p>
+                <p class="prices-list-text">from 200 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-list-text">Straight razor shave</p>
+                <p class="prices-list-text">from 200 uah.</p>
+              </li>
+            </ul>
+            <ul class="prices-list list">
+              <li class="prices-item">
+                <p class="prices-list-text">Trainee’s haircut</p>
+                <p class="prices-list-text">from 50 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-list-text">Haircut under the nozzle</p>
+                <p class="prices-list-text">from 200 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-list-text">Children’s haircut (0-12 y.o.)</p>
+                <p class="prices-list-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-list-text">Camouflage of gray hair</p>
+                <p class="prices-list-text">from 200 uah.</p>
+              </li>
+            </ul>
+          </div>
           <button type="button" class="prices-btn btn">Online-booking</button>
         </div>
       </section>
@@ -206,6 +214,7 @@
             For true enjoyers of the atmosphere
           </p>
           <h2 class="barbers-title section-title">Our barbers</h2>
+
           <ul class="barbers-list list">
             <li class="barbers-item">
               <img
@@ -272,6 +281,46 @@
             <li class="gallery-item">
               <img
                 src="./img/gallery-img-3.jpeg"
+                alt="haircut"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-4.jpeg"
+                alt="haircut"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-1.jpeg"
+                alt="haircut"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-2.jpeg"
+                alt="haircut"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-3.jpeg"
+                alt="haircut"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-4.jpeg"
                 alt="haircut"
                 width="270"
                 height="360"
