@@ -96,6 +96,16 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pre-title::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 
 .btn {
@@ -131,6 +141,10 @@ body {
 }
 .header-logo {
   margin-right: 131px;
+}
+
+.logo-icon {
+  fill: #303030;
 }
 
 .header-list {
@@ -219,7 +233,30 @@ body {
   letter-spacing: 0.05em;
   color: var(--main-title-color);
   margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
 }
+
+.hero-title:hover::before {
+  color: aqua;
+  background-image: url(../img/barbers-img-2.jpeg);
+}
+
+.hero-title::before {
+  content: '\1F602';
+  font-size: 32px;
+  background-image: url(../img/abot-img-2.jpeg);
+  background-size: cover;
+  background-position: top;
+  width: 40px;
+  height: 40px;
+}
+
+.hero-title::after {
+  content: '!';
+  color: tomato;
+}
+
 .hero-after-title {
   font-size: 18px;
   line-height: 1.67;
@@ -274,7 +311,13 @@ body {
 /* ----------------PRICES---------------- */
 
 .prices {
-  background-color: #303030;
+  background-color: #111319;
+  background-image: url(../img/prices-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .prices-pre-title {
@@ -292,13 +335,37 @@ body {
   justify-content: space-between;
 }
 .prices-list {
-  border: 1px solid #ffffff;
   padding: 30px 20px;
   width: calc((100% - 30px) / 2);
+}
+
+.prices-list:first-child {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.prices-list:last-child {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 .prices-item {
   display: flex;
   justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.prices-item::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
 }
 
 .prices-item + .prices-item {
@@ -317,18 +384,41 @@ body {
   margin-top: 44px;
 }
 
+.prices-list-text:last-child {
+  order: 1;
+}
+
 /* ----------------BENEFITS---------------- */
 
-.benefits {
+.benefits-container {
+  display: flex;
+  padding-left: 100px;
+}
+
+.benefits-wrap {
+  max-width: 500px;
+  padding-top: 9px;
 }
 .benefits-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+  margin-right: 130px;
 }
 
 .benefits-item {
   width: 170px;
   height: 133px;
-  border: 1px solid #000000;
   padding: 20px 24px;
+  background-color: #f7f7f7;
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
 }
 
 .benefits-item span {
@@ -340,6 +430,16 @@ body {
   color: #303030;
   display: block;
   margin-bottom: 6px;
+}
+
+.benefits-item span::after {
+  content: '+';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+  color: var(--accent-color);
+  vertical-align: top;
 }
 
 .benefits-item-text {
@@ -356,6 +456,13 @@ body {
 .benefits-title {
   color: #303030;
   margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.benefits-title::before {
+  content: '?';
+  transform: rotate(-180deg);
 }
 
 .benefits-after-title {
@@ -430,10 +537,6 @@ body {
   fill: #ffffff;
 }
 
-/* .barbers-soc-icon {
-  fill: currentColor;
-} */
-
 .barbers-soc-link:hover,
 .barbers-soc-link:focus {
   background-color: teal;
@@ -497,10 +600,25 @@ body {
   margin-bottom: 20px;
 }
 
+.contact-wrap {
+  background-color: #191c26;
+  background-image: url(../img/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.contact-wrap > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ----------------ONLINE---------------- */
 
 .online {
-  background-color: #303030;
+  width: calc(100% / 2 - 15px);
 }
 
 .online-title {
@@ -510,7 +628,8 @@ body {
 /* ----------------CONTACtS---------------- */
 
 .contacts {
-  background-color: #303030;
+  width: calc(50% - 15px);
+  padding-left: 100px;
 }
 
 .contacts-title {
