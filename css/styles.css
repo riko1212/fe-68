@@ -67,7 +67,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -120,12 +119,19 @@ body {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   background-color: transparent;
+  transition: background-color 200ms linear, color 200ms linear;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: var(--main-btn-color);
 }
 
 /* ----------------HEADER---------------- */
 
 .header {
-  background-color: gray;
+  position: absolute;
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -163,6 +169,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--main-title-color);
+  transition: color 200ms linear;
 }
 
 .header-link:hover,
@@ -190,8 +197,27 @@ body {
   display: flex;
 }
 
-.hero-list {
+.hero-soc {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40px;
+  padding-left: 27px;
+}
+
+.hero-list {
+  display: flex;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-list::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
 }
 
 .hero-wrap {
@@ -494,6 +520,30 @@ body {
   width: calc((100% - 60px) / 3);
 }
 
+.barbers-item:hover .barbers-top-text {
+  transform: translateY(0);
+}
+
+.barbers-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.barbers-top-text {
+  position: absolute;
+  top: 0;
+  padding: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  background-color: #ff6a0088;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+  overflow: auto;
+}
+
 .barbers-wrap {
   padding-top: 30px;
 }
@@ -535,6 +585,7 @@ body {
   align-items: center;
   justify-content: center;
   fill: #ffffff;
+  transition: background-color 200ms linear, fill 200ms linear;
 }
 
 .barbers-soc-link:hover,
@@ -563,15 +614,17 @@ body {
 .test-link {
   width: 100%;
   height: 100%;
-  border: 1px solid rgb(83, 79, 78);
+  border: 4px solid rgb(83, 79, 78);
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border-color 200ms linear;
 }
 
 .test-soc-icon {
   fill: rgb(83, 79, 78);
+  transition: fill 200ms linear;
 }
 
 .test-link:hover {
@@ -681,4 +734,51 @@ body {
   margin-bottom: 20px;
 
   color: #9da4bd;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(85, 85, 85, 0.482);
+  position: fixed;
+  top: 0;
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.modal {
+  width: 500px;
+  min-height: 500px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  transition: transform 300ms linear, border-radius 300ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) rotate(-360deg);
+  border-radius: 50%;
+}
+
+.modal-close {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #9da4bd;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
