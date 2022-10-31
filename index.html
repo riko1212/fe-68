@@ -460,6 +460,58 @@
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Заголовок модального вікна</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="input-label">Введіть імя</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder="Микола"
+                required
+                id="user-name"
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <label class="input-label"
+            ><span>Ваш телефон</span>
+            <span class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                placeholder="+380 (96) 111-11-11"
+                title="+380 (96) 111-11-11"
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <input
+            type="email"
+            name="user-email"
+            class="modal-input"
+            placeholder="Введіть пошту"
+          />
+          <div class="modal-field">
+            <label for="user-comment" class="input-label">Введіть імя</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-text"
+              placeholder="Комент"
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -469,3 +521,5 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+?user-name=Name &user-tel=%28096%29111-11-11& user-email=test%40mail.ua
