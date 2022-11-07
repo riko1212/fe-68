@@ -403,6 +403,26 @@
         <div class="container">
           <section class="online section">
             <h2 class="online-title section-title">Online-booking</h2>
+            <form class="online-form">
+              <input
+                type="text"
+                placeholder="Name*"
+                class="online-input online-item"
+                name="online-name"
+              />
+              <input
+                type="tel"
+                placeholder="Phone*"
+                class="online-input online-item"
+                name="online-tel"
+              />
+              <textarea
+                name="online-text"
+                class="online-textarea online-item"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="btn online-btn">Send</button>
+            </form>
           </section>
           <section class="contacts section">
             <h2 class="contacts-title section-title">Contacts</h2>
@@ -434,24 +454,30 @@
         </div>
       </div>
     </main>
-    <footer>
-      <p>&#169;Copyright 2020</p>
-      <ul>
-        <li>
-          <a href="" target="_blank" rel="noopener noreferrer nofollow"
-            >Instagram</a
-          >
-        </li>
-        <li>
-          <a
-            class="link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            >Youtube</a
-          >
-        </li>
-      </ul>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-copy">&#169;Copyright 2020</p>
+        <ul class="footer-list list">
+          <li class="footer-item">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="footer-link link"
+              >Instagram</a
+            >
+          </li>
+          <li class="footer-item">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="footer-link link"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -510,7 +536,49 @@
               placeholder="Комент"
             ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              class="input-check visually-hidden"
+            />
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./img/icons.svg#icon-che-1"></use>
+                </svg>
+              </span>
+              політика приватності</label
+            >
+          </div>
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <input
+                type="radio"
+                name="filter"
+                id="all"
+                class="filter-check visually-hidden"
+              /><label for="all" class="filter-text">All</label>
+            </li>
+            <li class="filter-item">
+              <input
+                type="radio"
+                name="filter"
+                id="aps"
+                class="filter-check visually-hidden"
+              /><label for="aps" class="filter-text">Aps</label>
+            </li>
+            <li class="filter-item">
+              <input
+                type="radio"
+                name="filter"
+                id="design"
+                class="filter-check visually-hidden"
+              /><label for="design" class="filter-text">Design</label>
+            </li>
+          </ul>
+          <button type="submit" class="btn">Send</button>
         </form>
       </div>
     </div>
@@ -521,5 +589,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-?user-name=Name &user-tel=%28096%29111-11-11& user-email=test%40mail.ua
