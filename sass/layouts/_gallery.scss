@@ -1,0 +1,16 @@
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.gallery-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.gallery-pre-title {
+  color: #303030;
+  margin-bottom: 20px;
+}

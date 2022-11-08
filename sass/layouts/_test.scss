@@ -1,0 +1,30 @@
+.test-list {
+  display: flex;
+  gap: 30px;
+}
+
+.test-item {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+}
+.test-link {
+  width: 100%;
+  height: 100%;
+  border: 4px solid rgb(83, 79, 78);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 200ms linear;
+  &:hover {
+    border-color: tomato;
+  }
+}
+
+.test-soc-icon {
+  fill: rgb(83, 79, 78);
+  transition: fill 200ms linear;
+  .test-link:hover & {
+    fill: tomato;
+  }
+}
