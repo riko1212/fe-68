@@ -79,8 +79,7 @@
   height: 100%;
   background: tomato;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
+  @extend %list;
   justify-content: center;
   fill: #ffffff;
   transition: background-color 200ms linear, fill 200ms linear;

@@ -28,37 +28,41 @@
   </head>
   <body class="site-body">
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-navigation">
-          <a href="" class="header-logo">
-            <svg class="logo-icon" width="69" height="55">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a href="" class="logo navigation__logo">
+            <svg class="logo__icon" width="69" height="55">
               <use href="./img/icons.svg#icon-logo"></use>
             </svg>
           </a>
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-link link current" href="https://www.google.com/"
+          <ul class="menu list">
+            <li class="menu__item">
+              <a class="menu__link link current" href="https://www.google.com/"
                 >About</a
               >
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="#prices">Services and prices</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#prices">Services and prices</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="#barbers">Barbers</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#barbers">Barbers</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="https://www.google.com/"
+            <li class="menu__item">
+              <a class="menu__link link" href="https://www.google.com/"
                 >Contacts</a
               >
             </li>
           </ul>
         </nav>
-        <div class="header-connect">
-          <a class="header-tel link" href="tel:+380441111111">
+        <div class="connect header__connect">
+          <a class="connect__tel link" href="tel:+380441111111">
             +38 044 111 11 11</a
           >
-          <button class="header-btn btn" type="button" data-modal-open>
+          <button
+            class="connect__btn btn btn--color-light"
+            type="button"
+            data-modal-open
+          >
             Online-booking
           </button>
         </div>
@@ -66,21 +70,21 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <div class="hero-soc">
-            <ul class="hero-list list">
-              <li class="hero-item">
+        <div class="container hero__container">
+          <div class="soc">
+            <ul class="soc__list list">
+              <li class="soc__item">
                 <a
-                  class="hero-link link"
+                  class="soc__link link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >Instagram</a
                 >
               </li>
-              <li class="hero-item">
+              <li class="soc__item">
                 <a
-                  class="hero-link link"
+                  class="soc__link link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -90,12 +94,14 @@
             </ul>
           </div>
 
-          <div class="hero-wrap">
-            <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title animate__animated animate__wobble">
+          <div class="hero__wrap">
+            <p class="pre-title hero__pre-title">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero__title animate__animated animate__wobble">
               BarberShop
             </h1>
-            <p class="hero-after-title">
+            <p class="hero__after-title">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
@@ -103,9 +109,9 @@
         </div>
       </section>
       <section class="about section">
-        <div class="container about-container">
-          <ul class="about-list list">
-            <li class="about-item">
+        <div class="container about__container">
+          <ul class="pic-list list">
+            <li class="pic-list__item">
               <img
                 src="./img/abot-img-1.jpeg"
                 alt="haircut"
@@ -113,7 +119,7 @@
                 height="445"
               />
             </li>
-            <li class="about-item">
+            <li class="pic-list__item">
               <img
                 src="./img/abot-img-2.jpeg"
                 alt="haircut"
@@ -122,23 +128,25 @@
               />
             </li>
           </ul>
-          <div class="about-wrap">
-            <p class="about-pre-title pre-title">About</p>
-            <h2 class="about-title section-title" data-aos="fade-down">
+          <div class="about__wrap">
+            <p class="pre-title about__pre-title">About</p>
+            <h2 class="section-title about__title" data-aos="fade-down">
               Best Barbershop in your city
             </h2>
-            <p class="about-after-title">
+            <p class="about__after-title">
               If you want to add more confidence to your image, you should
               definitely visit us.
             </p>
-            <p class="about-text">
+            <p class="about__text">
               We are a team that never stops at what has been achieved and are
               thirsty for changes. And when you fall into the hands of our
               master, you will never be the same again. We are a team that is
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn btn">Online-booking</button>
+            <button type="button" class="btn btn--color-dark">
+              Online-booking
+            </button>
           </div>
         </div>
       </section>

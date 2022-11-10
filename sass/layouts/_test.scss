@@ -12,8 +12,7 @@
   height: 100%;
   border: 4px solid rgb(83, 79, 78);
   border-radius: 5px;
-  display: flex;
-  align-items: center;
+  @extend %list;
   justify-content: center;
   transition: border-color 200ms linear;
   &:hover {
