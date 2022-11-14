@@ -12,11 +12,20 @@
 
 .barbers-list {
   display: flex;
+  flex-wrap: wrap;
+
   gap: 30px;
 }
 
 .barbers-item {
-  width: calc((100% - 60px) / 3);
+  // width: calc((100% - 90px) / 4);
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    @include calc(2, 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include calc(3, 30px);
+  }
 }
 
 .barbers-top-wrap {

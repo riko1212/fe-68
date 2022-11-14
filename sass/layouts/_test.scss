@@ -1,11 +1,19 @@
 .test-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .test-item {
-  width: calc((100% - 150px) / 6);
+  // width: calc((100% - 150px) / 6);
   height: 90px;
+  @include calc(2, 30px);
+  @media screen and (min-width: 768px) {
+    @include calc(3, 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include calc(6, 30px);
+  }
 }
 .test-link {
   width: 100%;

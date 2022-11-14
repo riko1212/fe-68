@@ -1,16 +1,24 @@
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 30px; */
-  column-gap: 30px;
-  row-gap: 50px;
+
+  gap: 30px;
 }
 
 .gallery-item {
-  width: calc((100% - 60px) / 3);
+  // width: calc((100% - 90px) / 4);
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+    &:hover {
+    }
+  }
 }
 
 .gallery-pre-title {
   color: #303030;
-  margin-bottom: 20px;
+  margin-bottom: 44px;
 }
