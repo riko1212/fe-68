@@ -10,6 +10,12 @@ body {
   text-decoration: none;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .section {
   padding-top: 84px;
   padding-bottom: 84px;
